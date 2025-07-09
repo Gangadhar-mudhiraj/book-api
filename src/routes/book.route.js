@@ -1,6 +1,10 @@
 import { Router } from "express";
 
-const router=Router()
+const router = Router()
+
+import {
+    getAllBooks, createBook, getBookById, updateBook, deleteBook
+} from "../controllers/book.controller.js"
 
 router.get('/', getAllBooks);        // GET /api/books
 router.post('/', createBook);        // POST /api/books

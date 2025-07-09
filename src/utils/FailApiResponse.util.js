@@ -1,7 +1,9 @@
-export default class FailApiResponse {
-  constructor({ message = 'Something went wrong', errors = null } = {}) {
+export default class FailApiResponse extends Error {
+  constructor({ statusCode = 500, message = 'Something went wrong', error = null }) {
+    super(message);
     this.success = false;
+    this.statusCode = statusCode;
     this.message = message;
-    if (errors !== null) this.errors = errors;
+    this.error = error;
   }
 }
