@@ -17,7 +17,7 @@ A RESTful API built using **Node.js**, **Express**, and **MongoDB** to manage a 
 ---
 
 ##  Project Structure
-
+```
 book-api/
 ├── src/
 │ ├── app.js # Express app setup
@@ -36,7 +36,7 @@ book-api/
 │ │ ├── asyncHandler.util.js
 │ │ ├── SuccessApiResponse.util.js
 │ │ └── FailApiResponse.util.js
-
+```
 
 ##  Package Overview
 
