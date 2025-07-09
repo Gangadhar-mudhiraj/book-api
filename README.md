@@ -1,4 +1,4 @@
-# 📘 Book Directory API
+# Book Directory API
 
 A RESTful API built using **Node.js**, **Express**, and **MongoDB** to manage a collection of books. It provides endpoints for creating, reading, updating, and deleting book records, with validation, modular structure, and structured JSON responses.
 
