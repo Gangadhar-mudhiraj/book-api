@@ -1,8 +1,8 @@
-export default class SuccessApiResponse {
-  constructor({ message = 'Success', data = null, meta = null } = {}) {
+export default class SuccessResponse {
+  constructor({ statusCode = 200, message = 'Success', data = {} }) {
     this.success = true;
+    this.statusCode = statusCode;
     this.message = message;
-    if (data !== null) this.data = data;
-    if (meta !== null) this.meta = meta;
+    this.data = data;
   }
 }
